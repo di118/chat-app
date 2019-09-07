@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <body>
-            Chat app
-
-            <button id="increment"> +1 </button>
-
-            <script src="/socket.io/socket.io.js"></script>
-            <script src="/js/chat.js"></script>
-        </body>
+        <title>Chat app</title>
+        <link rel="icon" href="img/favicon.png">
+        <link rel="stylesheet" href="/css/styles.min.css">
     </head>
+        <body>
+            <div class="centered-form">
+                <div class="centered-form__box">
+                    <h1> JOIN </h1>
+                    <form action="/chat.html">
+                        <label>Display name</label>
+                        <input type="text" name="username" placeholder="Display name" required>
+                        
+                        <label>Room</label>
+                        <input type="text" name="room" placeholder="Room" required>
+                        <button> JOIN</button>
+                    </form>
+                </div>
+            </div>
+            
+        </body>
+    
 </html>
